@@ -4,7 +4,12 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+let problems=[{
+    problemStatement:"Find maximum consecutive repeating character in string"+
+    "Input : str = \"aaaaaabbcbbbbbcbbbb\" \n Output: a",
+    solution:'this is a solution'
+}]
+ReactDOM.render(<App problems={problems}/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
