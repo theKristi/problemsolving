@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './NavBar';
+
 import Problem from './Problem';
 import Solution from './Solution';
 import Prism from "prismjs";
+import MyNavbar from './MyNavBar';
 class App extends Component {
   constructor(props){
     super(props);
@@ -40,7 +41,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar />
+        <MyNavbar/>
         <Problem problem={this.state.problemDisplayed} />
         <Solution problem={this.state.problemDisplayed}/>
         <Next displayNextProblem={this.displayNextProblem} hasNext={this.state.problemIndex<this.props.problems.length-1}/>

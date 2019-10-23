@@ -1,13 +1,12 @@
 import React,{Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Prism from "prismjs";
 import "./prism.css";
 class Problem extends Component{
    
     
     render(){
    
-    return <div className="col-6">
+    return <div className="col-md-6 col-sm-12">
                 <p>{this.props.problem.problemStatement}</p>
                 <pre>
                 <code className="language-javascript">
